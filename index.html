@@ -10,40 +10,49 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App=</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-3 previously-searched">Previously searched:</div>
-          <div class="col-3 previously-searched-city">Cambridge</div>
-          <div class="col-3 previously-searched-city">London</div>
-          <div class="col-3 previously-searched-city">Gdansk</div>
-        </div>
-        <h1>Krakow, Poland</h1>
-        <ul>
-          <li>Tuesday, 14:56</li>
-          <li>Sunny</li>
-        </ul>
-        <div class="row">
-          <div class="col-6 temperature">
-            <img src="images/sunny.png" alt="Sunny" />15°C | F
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+          <div class="row">
+            <div class="col-3 previously-searched">Previously searched:</div>
+            <div class="col-3 previously-searched-city">Cambridge</div>
+            <div class="col-3 previously-searched-city">London</div>
+            <div class="col-3 previously-searched-city">Gdansk</div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 23%</li>
-              <li>Wind: 7 mph</li>
-            </ul>
+          <h1>Krakow, Poland</h1>
+          <ul>
+            <li>Tuesday, 14:56</li>
+            <li>Sunny</li>
+            </div>
+          </ul>
+          <div class="row">
+            <div class="col-6 temperature">
+              <div class="clearfix weather-temp">
+                <img src="images/sunny.png" alt="Sunny" class="float-left" />
+                <div class="float-left">
+                  <strong>15°</strong>
+                  <span class="units">C | <a href="#" class="farenheit-link">F</a></span></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 23%</li>
+                <li>Wind: 7 mph</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sunset-sunrise">
+            <span class="sunrise">Sunrise 05:40</span>
+            <span class="sunset">Sunset 17:56</span>
           </div>
         </div>
-        <div class="sunset-sunrise">
-          <span class="sunrise">Sunrise 05:40</span>
-          <span class="sunset">Sunset 17:56</span>
-        </div>
-        <br />
         <small class="coded-by"
           ><a
             class="github-link"
@@ -55,7 +64,6 @@
         >
       </div>
     </div>
-
     <script src="src/app.js"></script>
   </body>
 </html>

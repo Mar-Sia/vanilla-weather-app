@@ -21,9 +21,12 @@ li {
   font-weight: 300;
 }
 
-.weather-app {
+.weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid rgba(253, 215, 206, 0.548);
   border-radius: 8px;
@@ -34,6 +37,10 @@ li {
   color: #70757a;
   font-size: 16px;
   font-weight: 300;
+}
+
+.sunrise {
+  font-weight: 400;
 }
 
 .previously-searched {
@@ -48,10 +55,34 @@ li {
   font-weight: 300;
 }
 
+.weather-temp img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temp strong {
+  font-size: 62px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temp .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
 .temperature {
   color: #70757a;
-  font-size: 16px;
-  font-weight: 300;
+}
+
+.farenheit-link {
+  text-decoration: none;
+}
+
+.overview {
+  margin-bottom: 20px;
 }
 
 .coded-by {

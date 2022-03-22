@@ -20,6 +20,9 @@ li {
   font-size: 16px;
   font-weight: 300;
 }
+.capitalise {
+  text-transform: capitalize;
+}
 
 .weather-app-wrapper {
   max-width: 600px;
@@ -55,6 +58,10 @@ li {
   font-weight: 300;
 }
 
+.weather-temp {
+  margin-bottom: 10px;
+}
+
 .weather-temp img {
   margin-right: 5px;
   height: 64px;
@@ -70,7 +77,7 @@ li {
 .weather-temp .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -32px;
 }
 
 .temperature {

@@ -25,10 +25,10 @@
             <div class="col-3 previously-searched-city">London</div>
             <div class="col-3 previously-searched-city">Gdansk</div>
           </div>
-          <h1>Krakow, Poland</h1>
+          <h1 id="city"></h1>
           <ul>
-            <li>Tuesday, 14:56</li>
-            <li>Sunny</li>
+            <li class = "capitalise" id="current-date">Tuesday, 14:56</li>
+            <li class = "capitalise"id="description"></li>
             </div>
           </ul>
           <div class="row">
@@ -36,21 +36,21 @@
               <div class="clearfix weather-temp">
                 <img src="images/sunny.png" alt="Sunny" class="float-left" />
                 <div class="float-left">
-                  <strong>15°</strong>
+                  <strong id="degrees"></strong>
                   <span class="units">C | <a href="#" class="farenheit-link">F</a></span></div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 23%</li>
-                <li>Wind: 7 mph</li>
+                
+                <li>Humidity: <span id="humidity"></span></li>
+                <li>Wind: <span id="wind-speed"></span></li>
               </ul>
             </div>
           </div>
           <div class="sunset-sunrise">
-            <span class="sunrise">Sunrise 05:40</span>
-            <span class="sunset">Sunset 17:56</span>
+            <span class="sunrise" id="sunrise">Sunrise 05:40</span>
+            <span class="sunset" id="sunset">Sunset 17:56</span>
           </div>
         </div>
         <small class="coded-by"

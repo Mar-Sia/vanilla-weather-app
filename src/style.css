@@ -20,7 +20,8 @@ li {
   font-size: 16px;
   font-weight: 300;
 }
-.capitalise {
+
+li:first-letter {
   text-transform: capitalize;
 }
 

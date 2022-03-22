@@ -1,0 +1,65 @@
+h1 {
+  color: #70757a;
+  font-size: 24px;
+  font-weight: 400;
+  font-weight: 28px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #70757a;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid rgba(253, 215, 206, 0.548);
+  border-radius: 8px;
+  background: rgba(253, 215, 206, 0.548);
+}
+
+.sunset-sunrise {
+  color: #70757a;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.previously-searched {
+  color: rgb(255, 158, 130);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.previously-searched-city {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.temperature {
+  color: #70757a;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.coded-by {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.github-link {
+  text-decoration: none;
+}

@@ -17,10 +17,10 @@
     <div class="container">
       <div class="weather-app">
         <div class="row">
-          <div class="col-3">Previously searched:</div>
-          <div class="col-3">Cambridge</div>
-          <div class="col-3">London</div>
-          <div class="col-3">Gdansk</div>
+          <div class="col-3 previously-searched">Previously searched:</div>
+          <div class="col-3 previously-searched-city">Cambridge</div>
+          <div class="col-3 previously-searched-city">London</div>
+          <div class="col-3 previously-searched-city">Gdansk</div>
         </div>
         <h1>Krakow, Poland</h1>
         <ul>
@@ -28,7 +28,7 @@
           <li>Sunny</li>
         </ul>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 temperature">
             <img src="images/sunny.png" alt="Sunny" />15°C | F
           </div>
           <div class="col-6">
@@ -39,18 +39,21 @@
             </ul>
           </div>
         </div>
-        <span class="sunrise">Sunrise 05:40</span>
-        <span class="sunset">Sunset 17:56</span>
-      </div>
-
-      <small
-        ><a
-          href="https://github.com/Mar-Sia/vanilla-weather-app"
-          target="_blank"
-          >Open-source code</a
+        <div class="sunset-sunrise">
+          <span class="sunrise">Sunrise 05:40</span>
+          <span class="sunset">Sunset 17:56</span>
+        </div>
+        <br />
+        <small class="coded-by"
+          ><a
+            class="github-link"
+            href="https://github.com/Mar-Sia/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Maria Siara</small
         >
-        by Maria Siara</small
-      >
+      </div>
     </div>
 
     <script src="src/app.js"></script>

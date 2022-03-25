@@ -94,9 +94,19 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
   );
 }
+function search(city) {
+  let apiKey = "309df4d5a54300eab011fb0dc95d4919";
 
-let apiKey = "309df4d5a54300eab011fb0dc95d4919";
-let city = "Krakow";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

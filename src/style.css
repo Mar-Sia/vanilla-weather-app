@@ -47,6 +47,10 @@ li:first-letter {
   font-weight: 400;
 }
 
+#sunrise {
+  font-weight: 400;
+}
+
 .previously-searched {
   color: rgb(255, 158, 130);
   font-size: 14px;

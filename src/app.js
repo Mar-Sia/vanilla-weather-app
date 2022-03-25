@@ -81,10 +81,22 @@ function displayTemperature(response) {
 
   let sunsetElement = document.querySelector("#sunset");
   sunsetElement.innerHTML = formatSunset(response.data.sys.sunset * 1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+
+  let altElement = document.querySelector("#icon");
+  altElement.setAttribute(
+    "alt",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`
+  );
 }
 
 let apiKey = "309df4d5a54300eab011fb0dc95d4919";
-let city = "London";
+let city = "Krakow";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);

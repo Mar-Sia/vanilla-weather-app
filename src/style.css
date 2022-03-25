@@ -87,6 +87,7 @@ li:first-letter {
 
 .conversion-link {
   text-decoration: none;
+  color: #ec6e4c;
 }
 
 .weather-temp .active {
@@ -113,6 +114,7 @@ li:first-letter {
 
 .github-link {
   text-decoration: none;
+  color: #ec6e4c;
 }
 
 .search-button {

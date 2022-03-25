@@ -52,7 +52,7 @@ li:first-letter {
 }
 
 .previously-searched {
-  color: rgb(255, 158, 130);
+  color: #ec6e4c;
   font-size: 14px;
   font-weight: 300;
 }
@@ -60,7 +60,7 @@ li:first-letter {
 .previously-searched-city {
   color: white;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .weather-temp {
@@ -113,4 +113,9 @@ li:first-letter {
 
 .github-link {
   text-decoration: none;
+}
+
+.search-button {
+  background-color: #ec6e4c;
+  color: white;
 }

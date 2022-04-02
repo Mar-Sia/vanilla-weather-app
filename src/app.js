@@ -54,6 +54,32 @@ function formatSunset(sunset) {
   return `${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+      <div class="weather-forecast-day">${day}</div>
+      <img
+        src="http://openweathermap.org/img/wn/01d@2x.png"
+        alt=""
+        width=48px
+      />
+      <div class="weather-forecast-temp">
+        <span class="maximum-temp-forecast">18°</span>
+        <span class="minimum-temp-forecast">10°</span>
+      </div>
+    </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   celsiusTemperature = response.data.main.temp;
   let temperatureElement = document.querySelector("#degrees");
@@ -142,3 +168,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Krakow");
+displayForecast();

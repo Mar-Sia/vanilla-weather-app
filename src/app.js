@@ -70,7 +70,7 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `<div class="col-2">
@@ -196,3 +196,22 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Krakow");
+
+let previouslySearched = [];
+function searchHistory(data) {
+  let cityInputElement = document.querySelector("#city-input");
+  previouslySearched.push(cityInputElement.value);
+
+  let lastSearched = cityInputElement.value;
+
+  let lastSearchedCity = document.querySelector("#last-searched-city");
+  lastSearchedCity.innerHTML =
+    lastSearched.charAt(0).toUpperCase() + lastSearched.slice(1);
+}
+
+let searchButton = document.querySelector("#search-button");
+searchButton.addEventListener("click", firstClick);
+
+function firstClick() {
+  searchButton.addEventListener("click", searchHistory);
+}

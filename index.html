@@ -21,9 +21,8 @@
           <div class="overview">
           <div class="row">
             <div class="col-3 previously-searched">Previously searched:</div>
-            <div class="col-3 previously-searched-city">Cambridge</div>
-            <div class="col-3 previously-searched-city">London</div>
-            <div class="col-3 previously-searched-city">Gdansk</div>
+            <div class="col-3 previously-searched-city" id="last-searched-city">Cambridge</div>
+          
           </div>
           <form id="search-form" class="mb-3 mt-2">
             <div class="row">
@@ -31,7 +30,7 @@
                 <input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocomplete="off"/>
               </div>
               <div class="col-3">
-                <input type="submit" value="Search" class="btn w-100 search-button"/>
+                <input type="submit" value="Search" class="btn w-100 search-button" id="search-button"/>
               </div>
               </div>
               </form>
